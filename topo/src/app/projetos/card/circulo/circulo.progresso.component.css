@@ -1,0 +1,26 @@
+.progress-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.1s ease;
+  transform-origin: 50% 50%;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8px;
+  font-weight: 500;
+  color: #68779E;
+}
+

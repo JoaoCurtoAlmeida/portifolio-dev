@@ -1,0 +1,32 @@
+
+<div class="container">
+<div  class="progress-container">
+  <svg class="progress-ring" width="60" height="60">
+    <!-- Fundo -->
+    <circle
+      class="progress-ring__background"
+      stroke="#e6e6e6"
+      stroke-width="3"
+      fill="transparent"
+      r="20"
+      cx="30"
+      cy="30"
+    />
+
+    <!-- Progresso -->
+    <circle
+      #progressCircle
+      class="progress-ring__circle"
+      stroke="#68779E"
+      stroke-width="3"
+      fill="transparent"
+      r="20"
+      cx="30"
+      cy="30"
+    />
+  </svg>
+
+  <div class="progress-text">{{ progress }}%</div>
+</div>
+</div>
+

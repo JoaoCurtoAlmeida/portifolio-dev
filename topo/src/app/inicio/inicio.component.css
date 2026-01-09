@@ -1,0 +1,172 @@
+
+
+.container-painel {
+  display: flex;
+  justify-self: center;
+  width: 971px;
+  height: 88vh;
+
+  margin-top: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.bloco1 {
+  width: 48%;
+  height: 90%;
+  padding: 7%;
+}
+
+.bloco2 {
+  width: 58%;
+  height: 90%;
+  background-image: url('/images/laptop-menu.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 90% auto;
+}
+
+.bloco2 img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+.info1 {
+  position: absolute;
+  top: 25%;
+  cursor: default;
+}
+
+.container-painel h1 {
+  color: #484C57;
+  font-size: 43px;
+  margin: 0;
+}
+
+.container-painel .text {
+  color: #5F7ECC;
+  font-size: 27px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.container-painel .info2 {
+  color: #535353;
+  font-size: 17px;
+  padding-bottom: 10px;
+
+}
+
+.botao-contatos {
+  display: flex;
+  gap: 5%;
+}
+
+.botao-contatos .botao1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #E4E4E4;
+  width: 180px;
+  height: 48px;
+  background-color: #68779E;
+  border-radius: 8px;
+  border: 1.5px solid #e4e4e400;
+  transition: transform 0.1s ease, border 0.3s ease;
+}
+
+.botao1 p {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.botao1 img {
+  padding-right: 15px;
+  width: 35px;
+  height: auto;
+}
+
+.botao1:active {
+  transform: scale(0.98);
+}
+
+.botao-contatos .botao1:hover {
+  cursor: pointer;
+  background-color: #7f8db3;
+
+}
+
+.botao-contatos .botao2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #E4E4E4;
+  width: 220px;
+  height: 48px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  transition: transform 0.1s ease, border 0.3s ease;
+}
+
+.botao-contatos .botao2:hover {
+  cursor: pointer;
+  border: 1.5px solid #68779E;
+
+}
+
+.botao2 p {
+  color: #535353;
+  font-size: 16px;
+}
+
+.botao2 img {
+  padding-right: 15px;
+  width: 35px;
+  height: auto;
+}
+
+.botao2:active {
+  transform: scale(0.98);
+}
+
+.contatos {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.contatos img {
+  width: 67%;
+  height: auto;
+}
+
+.git-icon,
+.linkedin-icon,
+.mail-icon,
+.whatsapp-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 500px;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E4E4E4;
+  transition: all 0.3s ease;
+
+}
+
+.git-icon:hover,
+.linkedin-icon:hover,
+.mail-icon:hover,
+.whatsapp-icon:hover {
+  cursor: pointer;
+  border: 1.5px solid #b9b9b9;
+}
+

@@ -1,0 +1,55 @@
+
+.container-painel {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 40px;
+
+}
+
+.titulo h1 {
+  color: #1F2937;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.titulo p {
+  color: #374151;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.container-projetos {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.flex1,
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex1 {
+  align-items: end;
+}
+
+.flex2 {
+  align-items: start;
+}
+
+

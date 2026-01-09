@@ -1,0 +1,134 @@
+.container-painel {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 40px;
+
+}
+
+.titulo h1 {
+  color: #1F2937;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.titulo p {
+  color: #374151;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.container-flex {
+  display: flex;
+  width: 100%;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  height: 500px;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 500px;
+  gap: 15px;
+
+}
+
+.container-contatos {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 270px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+
+}
+
+.container-contatos h1 {
+  padding-left: 25px;
+  font-size: 22px;
+  color: #2A2A2A;
+  margin-top: 20px
+}
+
+.email,
+.linkedin,
+.github,
+.whatsapp {
+  display: flex;
+  padding-left: 25px;
+  border: 1px solid rgba(255, 255, 255, 0);
+
+}
+
+.email:active,
+.linkedin:active,
+.github:active,
+.whatsapp:active {
+  border: 1px solid #d8d8d8;
+
+}
+
+.email p,
+.linkedin p,
+.github p,
+.whatsapp p {
+  font-size: 15px;
+  color: #374151;
+
+}
+
+img {
+  padding-right: 10px;
+  width: 35px;
+  cursor: pointer;
+
+}
+
+.botao-cv {
+  color: #FFFFFF;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  color: #68779E;
+  font-size: 13px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, border 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0)
+}
+
+button img {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  color: #68779E;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+}
+
+button:active {
+  transform: scale(0.97);
+}

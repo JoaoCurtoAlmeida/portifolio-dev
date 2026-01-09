@@ -1,0 +1,76 @@
+textarea {
+  resize: none;
+}
+
+input, textarea{
+  font-family: 'Inter', sans-serif;
+}
+
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 470px;
+  padding-top: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+.container-card p{
+  color: #374151;
+  font-size: 14px;
+  align-items: start;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input {
+  width: 450px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px #d8d8d8 solid;
+  padding: 5px;
+}
+
+textarea{
+  width: 450px;
+  height: 160px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px #d8d8d8 solid;
+}
+
+button {
+  width: 450px;
+  height: 45px;
+  border-radius: 7px;
+  margin: 15px;
+  background-color: #68779E;
+  color: #F5F5F5;
+  border: 1px #bebebe solid;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #7e8eb8;
+
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bebebe;
+  font-size: 13px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
