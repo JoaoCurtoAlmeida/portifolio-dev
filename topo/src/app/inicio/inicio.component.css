@@ -181,12 +181,12 @@
   .Container-mobile {
     display: flex;
     width: 100%;
-    height: auto;
+    min-height: 100%;
 
+    background-color: red;
   }
 
   .container-painel-mobile{
-  position: absolute;
   display: flex;
   flex-direction: column;
   margin-top: 100px;

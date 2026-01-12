@@ -6,6 +6,11 @@ app-menu {
 app-inicio {
   cursor: default;
 }
+app-sobre,
+.Container {
+  width: 100%;
+  max-width: 100%;
+}
 
 .Container {
   display: flex;
