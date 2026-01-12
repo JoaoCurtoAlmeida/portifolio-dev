@@ -16,3 +16,12 @@ body {
   font-family: 'Inter', sans-serif;
 
 }
+
+@media (max-width: 768px) {
+  body {
+    background-color: #FBF9FE;
+  }
+
+
+}
+

@@ -2,10 +2,22 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
-  imports: [],
+  standalone: true,
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+
+ isOpen = false;
+  activeItem: string = 'inicio';
+
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+  }
+
+  setActive(item: string) {
+    this.activeItem = item;
+
+  }
 
 }

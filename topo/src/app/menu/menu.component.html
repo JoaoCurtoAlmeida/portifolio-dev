@@ -9,3 +9,55 @@
     </ul>
   </nav>
 </div>
+
+<header class="header">
+  <div class="logo">João Almeida</div>
+
+  <button class="menu-btn" (click)="toggleMenu()">
+     <span class="icon" [class.show]="!isOpen">☰</span>
+  <span class="icon close" [class.show]="isOpen">✕</span>
+  </button>
+</header>
+
+<nav class="mobile-menu" [class.active]="isOpen">
+  <ul>
+    <li>
+      <a (click)="setActive('inicio')" [class.active]="activeItem === 'inicio'">
+        Início
+      </a>
+    </li>
+
+    <li>
+      <a (click)="setActive('sobre')" [class.active]="activeItem === 'sobre'">
+        Sobre
+      </a>
+    </li>
+
+    <li>
+      <a
+        (click)="setActive('habilidades')"
+        [class.active]="activeItem === 'habilidades'"
+      >
+        Habilidades
+      </a>
+    </li>
+
+    <li>
+      <a
+        (click)="setActive('projetos')"
+        [class.active]="activeItem === 'projetos'"
+      >
+        Projetos
+      </a>
+    </li>
+
+    <li>
+      <a
+        (click)="setActive('contato')"
+        [class.active]="activeItem === 'contato'"
+      >
+        Contato
+      </a>
+    </li>
+  </ul>
+</nav>
