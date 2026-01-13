@@ -6,7 +6,7 @@
   display: flex;
   justify-self: center;
   width: 971px;
-  height: 700px;
+  min-height: 100svh;
   user-select: none;
   -webkit-user-drag: none;
   margin-top: 60px;
@@ -19,11 +19,11 @@
 }
 
 .bloco2 {
-  width: 550px;
+  width: 500px;
   background-image: url('/images/laptop-menu.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: top right;
   background-size: 90% auto;
 }
 
@@ -174,20 +174,22 @@
 @media (max-width: 915px) {
   .Container {
     display: none;
+
   }
   .Container-mobile {
     display: flex;
-    width: 375px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100svh;
-    margin: 30px;
   }
 
   .container-painel-mobile{
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-left: 5%;
-  width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+
   }
 
   .container-painel-mobile h1 {
@@ -205,14 +207,12 @@
   }
 
 
-  .texto-info-mobile p{
+  .info-mobile{
     margin: 0;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 15px;
-    width: 100%;
-
-
+    color: #535353;
   }
   .container-botao-mobile {
   display: flex;

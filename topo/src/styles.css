@@ -8,7 +8,7 @@
 }
 
 
-body {
+body, html {
   background-color: #68779E;
   margin: 0;
   padding: 0;
