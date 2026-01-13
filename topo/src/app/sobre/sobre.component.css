@@ -1,210 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 .container-titulo {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
 }
 
 .container-titulo h1 {
-  padding-left: 7%;
   color: #2A2A2A;
   font-size: 40px;
+  margin: 0;
 }
 
+/* SOBRE */
 .container-sobre {
   display: flex;
-
-}
-
-.container-sobre,
-.flex1 {
-  width: 65%;
-  height: auto;
-}
-
-.container-sobre,
-.flex2 {
   width: 100%;
-  height: auto;
+}
+
+.container-sobre .flex1 {
+  width: 40%;
+}
+
+.container-sobre .flex2 {
+  width: 60%;
+  padding: 24px;
+}
+
+.flex2 .titulo {
+  font-weight: 600;
 }
 
 .flex2 p {
   color: #1F2937;
   font-size: 20px;
-  font-weight: bold;
-  padding-left: 10px;
 
 }
 
 .text1 p {
   color: #374151;
   font-size: 16px;
-  padding-left: 10px;
-  padding-right: 20px;
-  font-weight: 400;
-  line-height: 2;
+  line-height: 1.7;
 }
 
+/* CARDS */
 .container-cards {
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 30vh;
-
-
+  gap: 24px;
+  padding: 24px;
 }
 
-.container-cards .card1 {
-  width: 855px;
-  height: 235px;
-  margin: 15px 7px 15px 30px;
-  background-color: #FFFFFF;
+.card1,
+.card2 {
+  flex: 1;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.container-cards .card2 {
-  width: 855px;
-  height: 235px;
-  margin: 15px 30px 15px 7px;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-
-}
-
-.info-card {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-  margin-left: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 }
 
 .card1 h2,
 .card2 h2 {
-  color: #1F2937;
   font-size: 18px;
-  font-weight: 600;
-  margin: 25px;
-
-
-}
-
-.card1 span,
-.card2 span {
-  font-size: 14px;
+  margin: 20px;
   color: #374151;
 }
 
-.card1 img,
-.card2 img {
-  width: 18px;
-  height: auto;
-  padding-left: 5px;
+.info-card {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  padding: 0 20px 16px;
+  color: #374151;
+}
+
+.info-card span {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /*MOBILE*/
 
+
 @media (max-width: 915px) {
 
+  /* ===== CONTAINER GERAL ===== */
   .Container {
     width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
 
-  /* TÍTULO */
+  /* ===== TÍTULO ===== */
   .container-titulo {
     width: 100%;
-    justify-content: start;
-    margin: 10px;
-
+    padding: 16px;
+    margin: 0;
+    justify-content: flex-start;
   }
 
   .container-titulo h1 {
-    font-size: 22px;
-    text-align: center;
-    padding-left: 10px;
+    font-size: 1.4rem;
+    padding: 0;
   }
 
-  /* SOBRE */
+  /* ===== SOBRE ===== */
   .container-sobre {
-    width: 100%;
+    display: flex;
     flex-direction: column;
-    margin: 0;
+    width: 100%;
+  }
+
+  .container-sobre .flex1,
+  .container-sobre .flex2 {
+    width: 100%;
+    max-width: 100%;
   }
 
   .flex1 {
-    width: 100%;
-    height: 30vh;
-
+    min-height: 30vh;
   }
+
   .flex2 {
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: start;
-    justify-content: center;
-    padding: 10px;
-    padding-bottom: 30px;
-    background-color: #ffffff;
-  }
-  .flex2 .titulo{
-    color: #1F2937;
-  }
-  .flex2 p{
-    font-size: 19px;
+    gap: 12px;
+    background-color: #fff;
   }
 
-  .text1 {
-
+  .flex2 .titulo {
+    font-size: 1.1rem;
   }
+
+  .flex2 p {
+    font-size: 1rem;
+  }
+
   .text1 p {
-    font-size: 14px;
-    line-height: 1.4;
-    text-align: start;
+    font-size: 0.9rem;
+    line-height: 1.6;
     margin: 0;
-
   }
 
-  /* CARDS */
+  /* ===== CARDS ===== */
   .container-cards {
     width: 100%;
-    min-height: 440px;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding-top: 16px;
-  }
-
-  .info-card{
-    padding: 5px;
-    margin: 0;
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
   }
-  .container-cards .card1,
-  .container-cards .card2 {
-    width: 100%;
-    max-width: 385px;
-    height: auto;
-    margin: 0;
-    border-radius: 5px;
 
+  .card1,
+  .card2 {
+    width: 100%;
+    border-radius: 8px;
+    padding-bottom: 12px;
   }
 
   .card1 h2,
   .card2 h2 {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 16px;
   }
 
-  .card1 span,
-  .card2 span {
-    font-size: 13px;
+  .info-card {
+    gap: 8px;
+    padding: 0 16px 12px;
+  }
+
+  .info-card span {
+    font-size: 0.85rem;
   }
 
   .card1 img,
   .card2 img {
-
-    width: 22px;
+    width: 18px;
+    height: auto;
   }
 }
 

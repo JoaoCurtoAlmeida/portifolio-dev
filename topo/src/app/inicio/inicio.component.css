@@ -6,24 +6,20 @@
   display: flex;
   justify-self: center;
   width: 971px;
-  height: 88vh;
-
-  margin-top: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  height: 700px;
   user-select: none;
   -webkit-user-drag: none;
+  margin-top: 60px;
 }
 
 .bloco1 {
-  width: 48%;
-  height: 90%;
-  padding: 7%;
+  width: 471px;
+  padding-left: 50px;
+
 }
 
 .bloco2 {
-  width: 58%;
-  height: 90%;
+  width: 550px;
   background-image: url('/images/laptop-menu.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -39,8 +35,9 @@
 }
 
 .info1 {
-  position: absolute;
-  top: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
   cursor: default;
 }
 
@@ -180,10 +177,9 @@
   }
   .Container-mobile {
     display: flex;
-    width: 100%;
-    min-height: 100%;
-
-    background-color: red;
+    width: 375px;
+    min-height: 100svh;
+    margin: 30px;
   }
 
   .container-painel-mobile{
