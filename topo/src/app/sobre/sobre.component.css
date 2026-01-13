@@ -7,8 +7,11 @@
 .container-titulo {
   display: flex;
   align-items: center;
-  gap: 12px;
   padding: 24px;
+}
+
+.container-titulo img{
+  display: none;
 }
 
 .container-titulo h1 {
@@ -35,6 +38,7 @@
 .flex2 .titulo {
   font-weight: 600;
 }
+
 
 .flex2 p {
   color: #1F2937;
@@ -100,7 +104,10 @@
     width: 100%;
     padding: 16px;
     margin: 0;
-    justify-content: flex-start;
+    gap: 10px;
+  }
+.container-titulo img{
+    display: block;
   }
 
   .container-titulo h1 {
