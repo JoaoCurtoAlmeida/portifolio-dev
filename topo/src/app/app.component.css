@@ -3,15 +3,24 @@ app-menu {
   top: 0;
   z-index: 9999;
 }
+
 app-inicio {
   cursor: default;
 
 }
-app-sobre,
-.Container {
-  display: block;
-  width: 100%;
-  min-height: 100svh;
+
+app-sobre {
+  .Container {
+    display: block;
+    width: 100%;
+    min-height: 100svh;
+  }
+}
+
+app-projetos {
+  .Container {
+    margin: 0;
+  }
 }
 
 .Container {
@@ -28,6 +37,8 @@ app-sobre,
 
 @media (max-width: 915px) {
   .Container {
-  width: 100%;
-}
+    display: block;
+    width: 100%;
+
+  }
 }
