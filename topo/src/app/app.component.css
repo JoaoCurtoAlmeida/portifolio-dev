@@ -39,6 +39,8 @@ app-projetos {
   .Container {
     display: block;
     width: 100%;
+    justify-self: center;
+    align-items: start;
 
   }
 }
