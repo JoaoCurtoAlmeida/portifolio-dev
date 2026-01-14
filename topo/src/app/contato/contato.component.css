@@ -1,3 +1,9 @@
+
+
+.titulo img {
+  display: none;
+}
+
 .container-painel {
   display: flex;
   justify-self: center;
@@ -36,18 +42,23 @@
 .flex1 {
   display: flex;
   justify-content: center;
-  width: 650px;
+  width: 100%;
   height: 500px;
 }
 
 .flex2 {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  width: 450px;
+  width: 75%;
   height: 500px;
   gap: 15px;
 
 }
+
+  .container-flex {
+    width: 100%;
+  }
 
 .container-contatos {
   display: flex;
@@ -131,4 +142,149 @@ button:hover {
 
 button:active {
   transform: scale(0.97);
+}
+
+
+
+@media (max-width: 915px) {
+  app-card-contato {
+    width: 100%;
+  }
+
+  .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0;
+    padding: 16px;
+    gap: 10px;
+
+  }
+
+  .titulo img {
+    display: block;
+  }
+
+
+  .titulo h1 {
+    color: #2A2A2A;
+    font-size: 1.4rem;
+    margin: 0;
+    margin: 5px;
+  }
+
+  .container-painel {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .container-painel p {
+    color: #374151;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0;
+
+    margin: 0;
+  }
+
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    gap: 10px;
+
+  }
+
+  .flex2 img {
+    width: 20px;
+  }
+
+  .container-contatos {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 190px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+  }
+
+  .container-contatos h1 {
+    padding-left: 20px;
+    font-size: 17px;
+    color: #2A2A2A;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+
+  .email,
+  .linkedin,
+  .github,
+  .whatsapp {
+    display: flex;
+    padding-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+  }
+
+  .email:active,
+  .linkedin:active,
+  .github:active,
+  .whatsapp:active {
+    border: 1px solid #d8d8d8;
+
+  }
+
+  .email p,
+  .linkedin p,
+  .github p,
+  .whatsapp p {
+    font-size: 13px;
+    color: #374151;
+    margin: 7px 10px;
+  }
+
+  img {
+    width: 30px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .botao-cv {
+    color: #FFFFFF;
+    width: 95%;
+
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+
+  }
+
+  button img {
+    width: 15px;
+    height: 15px;
+  }
 }

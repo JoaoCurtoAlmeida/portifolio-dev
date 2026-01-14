@@ -23,6 +23,15 @@ app-projetos {
   }
 }
 
+app-contato {
+ .Container {
+    margin: 0;
+
+  }
+  width: 100%;
+
+}
+
 .Container {
   display: flex;
   justify-self: center;
