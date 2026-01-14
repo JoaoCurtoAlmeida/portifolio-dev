@@ -10,7 +10,7 @@ import { ProjetosComponent } from '../app/projetos/projetos.component';
 @Component({
   selector: 'app-root',
   imports: [InicioComponent, MenuComponent,
-    ContatoComponent,
+     ContatoComponent,
     SobreComponent,
     HabilidadesComponent,
     ProjetosComponent
