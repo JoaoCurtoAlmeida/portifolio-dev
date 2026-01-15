@@ -56,10 +56,6 @@ import {
   ViewEncapsulation,
   XSS_SECURITY_URL,
   ZONELESS_ENABLED,
-  __async,
-  __objRest,
-  __spreadProps,
-  __spreadValues,
   _global,
   _sanitizeHtml,
   _sanitizeUrl,
@@ -118,7 +114,13 @@ import {
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵstyleProp
-} from "./chunk-V3FWR4F6.js";
+} from "./chunk-TGMXX4AN.js";
+import {
+  __async,
+  __objRest,
+  __spreadProps,
+  __spreadValues
+} from "./chunk-WDMUDEB6.js";
 
 // node_modules/@angular/common/fesm2022/dom_tokens-rA0ACyx7.mjs
 var DOCUMENT = new InjectionToken(ngDevMode ? "DocumentToken" : "");
@@ -9375,4 +9377,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-FH5WZ2UQ.js.map
+//# sourceMappingURL=chunk-PJRT4IEM.js.map

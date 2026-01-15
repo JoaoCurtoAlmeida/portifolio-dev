@@ -83,3 +83,57 @@
 app-circulo {
   flex-shrink: 0;
 }
+
+@media (max-width: 370px) {
+
+.container-card {
+
+  width: 320px;
+  height: auto;
+
+
+}
+
+.card-imagem {
+
+  width: 320px;
+  height: 180px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-imagem img {
+  width: 255px;
+  height: 150px;
+
+}
+
+.titulo {
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.titulo h3{
+  font-size: 1.1rem;
+
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.titulo p{
+  font-size: 0.9rem;
+
+  line-height: 1.1;
+
+}
+
+.texto {
+  flex: 1;
+  padding-left: 3px;
+
+}
+
+}

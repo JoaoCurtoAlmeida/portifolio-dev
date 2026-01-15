@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-habilidades',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './habilidades.component.css'
 })
 export class HabilidadesComponent {
-
+  @Output() back = new EventEmitter<void>();
 }

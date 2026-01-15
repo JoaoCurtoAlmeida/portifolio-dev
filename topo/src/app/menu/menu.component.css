@@ -1,12 +1,19 @@
+
+
 .container-menu-mobile {
   display: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .container {
-  justify-self: center;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
-
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 

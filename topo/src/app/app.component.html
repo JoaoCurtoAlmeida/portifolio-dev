@@ -1,16 +1,30 @@
-<app-menu></app-menu>
-<div class="Container">
-  <app-inicio></app-inicio>
-  <app-sobre></app-sobre>
-  <app-habilidades></app-habilidades>
-  <div #habilidadesSection>
-    <app-projetos [ativarCirculo]="ativarCirculo"></app-projetos>
+<app-menu  [activeIndex]="currentIndex"
+  (navigate)="goToSection($event)"></app-menu>
+
+<div
+  class="Container"
+  (touchstart)="onTouchStart($event)"
+  (touchend)="onTouchEnd($event)"
+>
+  <div class="wrapper" [style.transform]="transform">
+    <section>
+      <app-inicio></app-inicio>
+    </section>
+
+    <section>
+      <app-sobre (back)="goBack()"></app-sobre>
+    </section>
+
+    <section>
+      <app-habilidades (back)="goBack()"></app-habilidades>
+    </section>
+
+    <section>
+      <app-projetos [ativarCirculo]="ativarCirculo" (back)="goBack()" ></app-projetos>
+    </section>
+
+    <section>
+      <app-contato (back)="goBack()"></app-contato>
+    </section>
   </div>
-  <app-contato></app-contato>
 </div>
-<!--
-
-
-
-
-</div> -->

@@ -19,8 +19,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
-  max-width: 500px;
+  width: 100%;
   padding: 16px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -38,8 +37,9 @@ button {
 /* Inputs */
 input,
 textarea {
-  width: 450px;
+  width: 100%;
   border-radius: 8px;
+  min-width: 430px;
   border: 1px solid #d8d8d8;
   padding: 10px;
   font-size: 14px;
@@ -92,19 +92,21 @@ textarea:focus {
 @media (max-width: 915px) {
   .container {
     display: flex;
-    margin: 10px;
     align-items: center;
     justify-content: center;
   }
 
   .container-card {
+    width: 95%;
     padding: 20px;
+    margin-bottom: 10px;
   }
 
   .Nome,
   .Email,
   .Mensagem {
     width: 100%;
+
   }
 
   textarea {
@@ -113,5 +115,10 @@ textarea:focus {
 
   button {
     max-width: 450px;
+  }
+
+  input,
+  textarea {
+    min-width: 0;
   }
 }

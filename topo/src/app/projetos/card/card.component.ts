@@ -7,5 +7,7 @@ import { CirculoProgressoComponent } from './circulo/circulo.progresso.component
   styleUrl: './card.component.css'
 })
 export class CardComponent {
+
    @Input() ativarCirculo = false;
+
 }

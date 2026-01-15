@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output, EventEmitter } from '@angular/core';
 import { CardContatoComponent } from "./card-contato/card-contato.component";
 
 @Component({
@@ -8,5 +8,5 @@ import { CardContatoComponent } from "./card-contato/card-contato.component";
   styleUrl: './contato.component.css'
 })
 export class ContatoComponent {
-
+  @Output() back = new EventEmitter<void>();
 }

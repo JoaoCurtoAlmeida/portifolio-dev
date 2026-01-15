@@ -1,8 +1,8 @@
 .container {
   display: flex;
   justify-content: center;
-  width: 380px;
-  height: 300px;
+  width: 100%;
+  min-width: 380px;
   border-radius: 5px;
   background-color: #FFFFFF;
 }
@@ -12,37 +12,60 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 365px;
+  width: 95%;
   height: 300px;
   border-radius: 5px;
   background-image: url('/images/Rectangle-borda.png');
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 100% auto;
-
 }
-.empty-img img{
+
+.empty-img img {
   width: 195px;
-  height: 135px;
-
+  height: auto;
 }
+
 .container .titulo {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .titulo h3 {
-   font-size: 1.2rem;
+  font-size: 1.2rem;
   color: #374151;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 }
 
-.titulo p{
+.titulo p {
   font-size: 0.8rem;
   color: #374151;
   line-height: 1.3;
+}
 
+/* 📱 Mobile até 370px */
+@media (max-width: 370px) {
+  .container {
+    width: 100%;
+    min-width: 320px;
+    height: 260px;
+    align-items: center;
+  }
+
+    .empty-background {
+      width: 95%;
+  }
+
+  .empty-img img {
+    width: 165px;
+  }
+
+  .titulo h3 {
+    font-size: 1.1rem;
+  }
+
+  .titulo p {
+    font-size: 0.7rem;
+  }
 }

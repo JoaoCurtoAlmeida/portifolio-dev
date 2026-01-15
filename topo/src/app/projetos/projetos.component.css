@@ -38,7 +38,6 @@
 .container-projetos {
   display: flex;
   align-items: start;
-  justify-content: center;
   gap: 15px;
 
 }
@@ -48,15 +47,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
-.flex1 {
-  align-items: end;
-}
-
-.flex2 {
-  align-items: start;
-}
 
 
 
@@ -109,22 +102,19 @@
 
   .container-projetos {
     flex-direction: column;
+    width: 100%;
 
   }
+
 
   .flex1,
   .flex2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
+    align-items: center;
+
+
   }
 
-  .flex1 {
-    align-items: end;
-  }
 
-  .flex2 {
-    align-items: start;
-  }
 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-sobre',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './sobre.component.css'
 })
 export class SobreComponent {
-
+  @Output() back = new EventEmitter<void>();
 }
