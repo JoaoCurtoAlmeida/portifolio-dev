@@ -1,5 +1,7 @@
-<app-menu  [activeIndex]="currentIndex"
-  (navigate)="goToSection($event)"></app-menu>
+<app-menu
+  [activeIndex]="currentIndex"
+  (navigate)="goToSection($event)"
+></app-menu>
 
 <div
   class="Container"
@@ -7,23 +9,26 @@
   (touchend)="onTouchEnd($event)"
 >
   <div class="wrapper" [style.transform]="transform">
-    <section>
+    <section id="inicio">
       <app-inicio></app-inicio>
     </section>
 
-    <section>
+    <section id="sobre">
       <app-sobre (back)="goBack()"></app-sobre>
     </section>
 
-    <section>
+    <section id="habilidades">
       <app-habilidades (back)="goBack()"></app-habilidades>
     </section>
 
-    <section>
-      <app-projetos [ativarCirculo]="ativarCirculo" (back)="goBack()" ></app-projetos>
+    <section id="projetos">
+      <app-projetos
+        [ativarCirculo]="ativarCirculo"
+        (back)="goBack()"
+      ></app-projetos>
     </section>
 
-    <section>
+    <section id="contato">
       <app-contato (back)="goBack()"></app-contato>
     </section>
   </div>

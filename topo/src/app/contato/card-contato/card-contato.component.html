@@ -1,18 +1,45 @@
 <div class="container">
-  <div class="container-card">
+  <form
+    class="container-card"
+    action="https://formsubmit.co/joao.curto.almeida@gmail.com"
+    method="POST"
+  >
+    <!-- configurações -->
+    <input type="hidden" name="_subject" value="Contato pelo Portfólio" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
+
     <div class="Nome">
       <p>Nome</p>
-      <input class="nome" type="text" placeholder="Seu Nome" />
-    </div>
-    <div class="Email">
-      <p>Email</p>
-      <input class="email" type="text" placeholder="Seu Email" />
-    </div>
-    <div class="Mensagem">
-      <p>Mensagem</p>
-      <textarea placeholder="Sua Mensagem"></textarea>
+      <input
+        class="nome"
+        type="text"
+        name="name"
+        placeholder="Seu Nome"
+        required
+      />
     </div>
 
-    <button>Enviar Mensagem</button>
-  </div>
+    <div class="Email">
+      <p>Email</p>
+      <input
+        class="email"
+        type="email"
+        name="email"
+        placeholder="Seu Email"
+        required
+      />
+    </div>
+
+    <div class="Mensagem">
+      <p>Mensagem</p>
+      <textarea
+        name="message"
+        placeholder="Sua Mensagem"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit">Enviar Mensagem</button>
+  </form>
 </div>

@@ -12,26 +12,57 @@
       <p>utilize os canais de contato abaixo</p>
   </div>
 <div class="container-flex">
-    <div class="flex1"><app-card-contato></app-card-contato></div>
-    <div class="flex2">
-      <div class="container-contatos">
-        <h1>Outros Contatos</h1>
-        <div class="email">
-          <img src="/icones/mail.svg" />
-          <p>joao.curto.almeida&#64;gmail.com</p>
-        </div>
-        <div class="linkedin">
-          <img src="/icones/linkedin.svg" />
-          <p>Linkedin</p>
-        </div>
-        <div class="github">
-          <img src="/icones/git.svg" />
-          <p>Github</p>
-        </div>
-        <div class="whatsapp">
-          <img src="/icones/whatsapp.svg" />
-          <p>Whatsapp</p>
-        </div>
+    <div class="flex1">
+    <app-card-contato></app-card-contato>
+  </div>
+
+  <div class="flex2">
+    <div class="container-contatos">
+      <h1>Outros Contatos</h1>
+
+      <!-- EMAIL -->
+      <a
+        class="email"
+        href="mailto:joao.curto.almeida@gmail.com?subject=Contato%20pelo%20site&body=Olá,%20vim%20pelo%20seu%20portfólio."
+      >
+        <img src="/icones/mail.svg" alt="E-mail" />
+        <p>joao.curto.almeida&#64;gmail.com</p>
+      </a>
+
+      <!-- LINKEDIN -->
+      <a
+        class="linkedin"
+        href="https://br.linkedin.com/in/jo%C3%A3o-victor-curto-de-almeida-46413222b?trk=people-guest_people_search-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/icones/linkedin.svg" alt="LinkedIn" />
+        <p>LinkedIn</p>
+      </a>
+
+      <!-- GITHUB -->
+      <a
+        class="github"
+        href="https://github.com/JoaoCurtoAlmeida"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/icones/git.svg" alt="GitHub" />
+        <p>GitHub</p>
+      </a>
+
+      <!-- WHATSAPP -->
+      <a
+        class="whatsapp"
+        href="https://wa.me/5527988450527"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/icones/whatsapp.svg" alt="WhatsApp" />
+        <p>WhatsApp</p>
+      </a>
+
+
 
     </div>
     <div class="botao-cv">

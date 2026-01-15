@@ -1,11 +1,11 @@
 <div class="container">
   <nav class="menu">
     <ul>
-      <li><a routerLink="/">Início</a></li>
-      <li><a routerLink="/sobre">Sobre</a></li>
-      <li><a routerLink="/contato">Habilidades</a></li>
-      <li><a routerLink="/contato">Projetos</a></li>
-      <li><a routerLink="/contato">Contato</a></li>
+      <li><a (click)="scrollTo('inicio')" >Início</a></li>
+      <li><a (click)="scrollTo('sobre')" >Sobre</a></li>
+      <li><a (click)="scrollTo('habilidades')" >Habilidades</a></li>
+      <li><a (click)="scrollTo('projetos')" >Projetos</a></li>
+      <li><a (click)="scrollTo('contato')" >Contato</a></li>
     </ul>
   </nav>
 </div>

@@ -12,8 +12,25 @@ import {
 export class MenuComponent implements OnChanges{
   @Input() activeIndex = 0;
   @Output() navigate = new EventEmitter<number>();
-
   isOpen = false;
+
+  scrollTo(sectionId: string) {
+  const element = document.getElementById(sectionId);
+  const headerOffset = 80; // altura do seu menu em px
+  if (element) {
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+
+
+  }
+
+
   activeItem = 'inicio';
    private indexMap = ['inicio', 'sobre', 'habilidades', 'projetos', 'contato'];
   ngOnChanges(changes: SimpleChanges) {
