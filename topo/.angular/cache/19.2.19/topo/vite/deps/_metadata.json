@@ -1,31 +1,31 @@
 {
-  "hash": "640142fe",
-  "configHash": "2e04674d",
+  "hash": "320a6ce9",
+  "configHash": "8c6e56bb",
   "lockfileHash": "2b367dc5",
-  "browserHash": "58821609",
+  "browserHash": "1736b56e",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "b652a631",
+      "fileHash": "c5aaf167",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "bd7794f1",
+      "fileHash": "a42bb6a1",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "f1111c37",
+      "fileHash": "d1bcc122",
       "needsInterop": false
     },
     "@studio-freight/lenis": {
       "src": "../../../../../../node_modules/@studio-freight/lenis/dist/lenis.mjs",
       "file": "@studio-freight_lenis.js",
-      "fileHash": "d2ebdf95",
+      "fileHash": "9fe12ca4",
       "needsInterop": false
     }
   },

@@ -5,7 +5,7 @@
 .container-painel {
   display: flex;
   justify-self: center;
-  width: 971px;
+  width: 100%;
   min-height: 100svh;
   user-select: none;
   -webkit-user-drag: none;
@@ -13,13 +13,15 @@
 }
 
 .bloco1 {
-  width: 471px;
+  width: 100%;
+  max-width: 471px;
   padding-left: 50px;
 
 }
 
 .bloco2 {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   background-image: url('/images/laptop-menu.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -27,12 +29,7 @@
   background-size: 90% auto;
 }
 
-.bloco2 img {
-  width: 300px;
-  height: auto;
-  border-radius: 5px;
 
-}
 
 .info1 {
   display: flex;

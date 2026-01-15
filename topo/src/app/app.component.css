@@ -40,7 +40,8 @@ app-contato {
   justify-self: center;
   align-items: center;
   flex-direction: column;
-  width: 971px;
+  width: 100%;
+  max-width: 971px;
   background-color: #FBF9FE;
   margin: 0 auto;
   border-radius: 5px;
@@ -48,14 +49,17 @@ app-contato {
 
 @media (max-width: 915px) {
   .Container {
+    margin: 0;
     display: block;
     width: 100vw;
+    background-color: none;
     min-height: 100dvh;
     justify-self: center;
     align-items: start;
     overflow: hidden;
     touch-action: pan-y;
   }
+
 
   .wrapper {
     display: flex;
