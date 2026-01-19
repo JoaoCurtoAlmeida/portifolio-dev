@@ -13,7 +13,7 @@
 
 <div class="container-menu-mobile">
 <header class="header">
-  <div class="logo">João Almeida</div>
+  <div class="logo" ><a  (click)="setActive('inicio')" [class.active]="activeItem === 'inicio'">João Almeida</a></div>
 
   <button class="menu-btn" (click)="toggleMenu()">
      <span class="icon" [class.show]="!isOpen">☰</span>
